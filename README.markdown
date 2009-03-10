@@ -1,7 +1,7 @@
 Abstract Classes.  In Ruby.
 ===========================
 
-Lets say you've got a class called `Car`.  There are two subclasses of `Car`: `Convertible` and `Sedan`.  And it turns out that all cars are either convertibles or sedans.  (Who knew?)  So really, there's no reason that a car object wouldn't be an instance of `Convertible` or `Sedan`, and in fact an object that's a direct instance of `Car` itself won't even work correctly.
+Let's say you've got a class called `Car`.  There are two subclasses of `Car`: `Convertible` and `Sedan`.  And it turns out that all cars are either convertibles or sedans.  (Who knew?)  So really, there's no reason that a car object wouldn't be an instance of `Convertible` or `Sedan`, and in fact an object that's a direct instance of `Car` itself won't even work correctly.
 
     class Car
       def go_forward
