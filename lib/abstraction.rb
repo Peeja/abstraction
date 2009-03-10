@@ -21,12 +21,15 @@ class Class
   def abstract
     abstract_class = self
     
-    meta_def :new do
+    raise_if_abstract = lambda do
       if self == abstract_class
         raise AbstractClassError, "#{self} is an abstract class and cannot be instantiated"
       else
         super
       end
     end
+    
+    meta_def :new, &raise_if_abstract
+    meta_def :allocate, &raise_if_abstract
   end
 end
