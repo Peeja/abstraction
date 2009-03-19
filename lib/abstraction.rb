@@ -31,5 +31,7 @@ class Class
     
     meta_def :new, &raise_if_abstract
     meta_def :allocate, &raise_if_abstract
+    
+    nil
   end
 end
