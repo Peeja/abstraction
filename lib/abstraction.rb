@@ -21,11 +21,11 @@ class Class
   def abstract
     abstract_class = self
     
-    raise_if_abstract = lambda do
+    raise_if_abstract = lambda do |*args, &block|
       if self == abstract_class
         raise AbstractClassError, "#{self} is an abstract class and cannot be instantiated"
       else
-        super
+        super *args, &block
       end
     end
     
