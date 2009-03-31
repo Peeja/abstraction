@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{abstraction}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Peter Jaros"]
-  s.date = %q{2009-03-19}
+  s.date = %q{2009-03-31}
   s.description = %q{Abstract classes for Ruby}
   s.email = %q{peter.a.jaros@gmail.com}
   s.files = ["README.markdown", "VERSION.yml", "lib/abstraction.rb", "spec/abstraction_spec.rb", "spec/spec.opts"]
