@@ -25,6 +25,10 @@ How would you write `Car#doors`?  You wouldn't, because unlike moving forward, t
 
 But what's stopping us?  Nothing.  And that's a problem.  So let's fix it:
 
+    $ sudo gem install abstraction
+
+Then:
+
     require 'abstraction'
     
     class Car
@@ -117,7 +121,7 @@ But as we've seen, Abstraction clears that all up.  Just make the class abstract
 Abstract Methods
 ================
 
-(Warning: this section is a bit of a tease.)
+*(Warning: this section is a bit of a tease.)*
 
 Traditionally, abstract classes are found in strongly typed languages, where the compiler makes sure they're never created by type checking.  In the Ruby world, the test suite is essentially our type checker.  No complier can statically prove that an abstract Ruby class will never be instantiated, but we can exercise the test suite and see if it ever happens.
 
