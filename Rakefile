@@ -8,6 +8,7 @@ begin
     s.homepage = "http://github.com/Peeja/abstraction"
     s.rubyforge_project = "abstraction"
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler, or one of its dependencies, is not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
